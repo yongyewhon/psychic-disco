@@ -17,7 +17,7 @@ Python 3.x
 
 Opencv 3.x or above ( pip install opencv-python )
 
-# Usage
+# Usage and code setting
 
 Keep 30 days or can edit from program (eg: Keep_Data = 30) on nvr_thread.py line code 12.
 
