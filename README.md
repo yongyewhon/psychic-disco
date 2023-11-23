@@ -2,10 +2,9 @@
 4-channel NVR to record video on motion detect (Python).
 
 # Program features
-Python implementation to stream camera feed from OpenCV videoCapture via RTSP using multithreading in which to enhance video streaming concurrently and Reduce Latency during streaming.
+Python implementation to stream camera feed from OpenCV videoCapture via RTSP using multithreading in which to enhance video streaming concurrently and reduce latency during streaming.
 
-Motion detected and save video files hourly the "record: folder.
-
+Motion detected and save video files hourly the "record" folder.
 
 Can set the sensitivity of minimum motion area
 
@@ -20,25 +19,23 @@ Opencv 3.x or above ( pip install opencv-python )
 
 # Usage
 
-python motion_detector.py
-
 Keep 30 days or can edit from program (eg: Keep_Data = 30) on nvr_thread.py line code 12.
 
-Change NVR display resolution from program (eg: Display_Resolution = (width, height)) on nvr_thread.py line code 13
+Change NVR display resolution (eg: Display_Resolution = (width, height)) on nvr_thread.py line code 13
 
 Change motion area detection (pixels) from program (eg: Motion_Area = 10000) on nvr_thread.py line code 14
 
 Change IP camera link (eg: Video_Path_1 = "rtsp://admin:sl888888@192.168.2.85") on nvr_thread.py line code 15 to 18
 
-The default save video format is mp4v and keep the same resolution with the streaming video
+Change record video frame (eg: Video_FPS = 20) on camera_thread.py line code 8
+
+Change record video resolution (eg: Video_Resolution = (width, height)) on camera_thread.py line code 9
+
+Can change the fourcc video codec on camera_thread.py line code 10 and currently using mp4v
 
 # Run program
 
-python motion_detector.py to connect with webcam
-
-eg: python motion_detector.py --video rtsp://admin:sl888888@10.1.1.85:554 to connect with IP camera
-
-eg: python motion_detector.py --video rtsp://admin:sl888888@10.1.1.85:554 ----area min_area 2 --format 1 to customize the sensitivity and video format
+python motion_detector.py
 
 # Keyboard function:
 
