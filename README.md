@@ -1,5 +1,6 @@
 # nvr_thread
 4-channel NVR to record video on motion detect (Python).
+![live_nvr](https://github.com/yongyewhon/nvr_thread/assets/151745867/4eecec7a-5128-41ed-a012-8c5f15cf630e)
 
 # Program features
 Python implementation to stream camera feed from OpenCV videoCapture via RTSP using multithreading in which to enhance video streaming concurrently and reduce latency during streaming.
